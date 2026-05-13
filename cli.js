@@ -5,4 +5,4 @@ import { dirname } from 'path';
 
 const dir = dirname(fileURLToPath(import.meta.url));
 console.log('Starting Sentinel SDK...');
-execSync('npm run dev', { cwd: dir, stdio: 'inherit' });
+execSync('npx tsx server.ts', { cwd: dir, stdio: 'inherit' });
